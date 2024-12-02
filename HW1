@@ -1,0 +1,12 @@
+const num = 547; 
+const divBy2 = num % 2 === 0;
+const divBy3 = num % 3 === 0;
+const divBy5 = num % 5 === 0;
+
+const cond1 = (divBy2 || divBy3 || divBy5) && !((divBy2 && divBy3) ||(divBy3 && divBy5) ||(divBy2 && divBy5));
+
+const cond2 = (divBy2 && divBy3) ||(divBy3 && divBy5) || (divBy2 && divBy5);
+
+const cond3 = divBy2 && divBy3 && divBy5;
+
+console.log(Number(cond1) + 2 * Number(cond2) + 3 * Number(cond3));
