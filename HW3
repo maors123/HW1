@@ -1,0 +1,12 @@
+function CountZero(arr) {
+//פונקציה מחזירה כמה איברים הם אפסים
+let count = 0 ;
+for (let i = 0; i < arr.length; i++) {
+    arr[index]=== 0 && count++ ;
+}
+return count;
+}
+
+const arr_numbers = [0,1,2,3,0,4];
+
+console.log(CountZero(arr_numbers));
