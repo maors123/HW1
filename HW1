@@ -1,12 +1,14 @@
-const num = 547; 
-const divBy2 = num % 2 === 0;
-const divBy3 = num % 3 === 0;
-const divBy5 = num % 5 === 0;
+//אופציה ראשונה
+const num1 = 3 ;
+((num1%5===0)||(num1%3===0)||(num1%2===0))&&console.log("1")
 
-const cond1 = (divBy2 || divBy3 || divBy5) && !((divBy2 && divBy3) ||(divBy3 && divBy5) ||(divBy2 && divBy5));
 
-const cond2 = (divBy2 && divBy3) ||(divBy3 && divBy5) || (divBy2 && divBy5);
+//אופצייה שנייה
+const num = 6;
+((num % 2 === 0 && num % 3 === 0) ||
+ (num % 3 === 0 && num % 5 === 0) ||
+ (num % 2 === 0 && num % 5 === 0)) && console.log("2");
 
-const cond3 = divBy2 && divBy3 && divBy5;
-
-console.log(Number(cond1) + 2 * Number(cond2) + 3 * Number(cond3));
+ //אופצייה שלישית
+ const num3 = 30;
+ (num3%2 === 0 && num3%3 === 0 && num3%5 === 0 ) && console.log("3");
