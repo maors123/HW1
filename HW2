@@ -1,16 +1,14 @@
-function PrimeNum(num) {// פונק' שבודקת האם מספר הוא ראשוני
-    if (num <= 1)
-         return false; // 1 ומטה אינם מספרים ראשוניים
-    for (let i = 2; i * i <= num; i++) {
-        if (num % i === 0) {
-            return false; // אם יש מחלקים פרט ל-1 ולמספר עצמו, הוא לא ראשוני
+function isPrime(n) {
+    if (n < 2) return false; 
+    for (let index = 2; index <= Math.sqrt(n); index++) {
+        if (n % index === 0) {
+            return false; 
         }
     }
-    return true; // אם אין מחלקים פרט ל-1 ולמספר עצמו, הוא ראשוני
+    return true; 
 }
 
-for (let i = 2; i < 237; i++) {
-    if (PrimeNum(i)) {
-        console.log(i);
-    }
+for (let i = 0; i <= 237; i++) {
+    //שימוש ללא ביטוי מותנה להדפסה כול הראשונים עד 237
+    isPrime(index) && console.log(index);
 }
