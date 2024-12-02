@@ -1,2 +1,1 @@
-// פונקציה לבדוק אם מספר הוא ראשונfunction PrimeNumber(num) {
-sdfsdfsdf
+All the exercises have explanations about the entire code.
